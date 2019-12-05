@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fitness Royale</title>
+    <script src="CreateMap.js"></script>
+    <script src="menu.js"></script>
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 90%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="Greeting">Hey there adventurer, why don't you click dat button</p>
+    <button onclick="myfunction()">Start your adventure!</button>
+
+    <div id="map"></div>
+
+    <button onclick="findMe()">Get Location</button>
+    <h2 id="pos"></h2>
+    <h3>HUlllo</h3>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8uA1VIHzktYer1XAMwVwlgiArdQJGVHs&callback=initMap&libraries=drawing"
+      async
+      defer
+    ></script>
+  </body>
+</html>
